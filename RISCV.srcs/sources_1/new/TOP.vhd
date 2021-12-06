@@ -96,10 +96,10 @@ COMPONENT datamemory is
 PORT(
 clk:in std_logic;
 rst:in std_logic;
-mc:in std_logic_vector(1 downto 0);	  --Byte-01 HalfWord-10£¬Word-11£¬Nop-00
+mc:in std_logic_vector(1 downto 0);	  --Byte-01 HalfWord-10Â£Â¬Word-11Â£Â¬Nop-00
 alu_out:in std_logic_vector(31 downto 0); --address &mux, can be not 4-aligned address
 data_in:in std_logic_vector(31 downto 0); --data_in
-rd: in std_logic;      	--1:Load£»0:Store
+rd: in std_logic;      	--1:LoadÂ£Â»0:Store
 op: in std_logic_vector(2 downto 0); --Use in mux for write_back //same as funct3 
 s_data_ext: in std_logic; --Use in mux for write_back //0: alu_out=>dm_out; 1: data_ext=>dm_out
 dm_out: out std_logic_vector(31 downto 0)   
@@ -161,6 +161,7 @@ signal			CU_opcode:			 std_logic_vector(6 downto 0);
 
 --IM in
 signal IM_addr:     std_logic_vector(31 downto 0);
+signal IM_clk:      std_logic:='0';
 --IM out
 signal IM_funct7:      std_logic_vector(6 downto 0);
 signal IM_funct3:      std_logic_vector(2 downto 0);
@@ -196,10 +197,10 @@ signal  ALU_alu_out:    std_logic_vector(31 downto 0);
 signal  ALU_bc:         std_logic;
 
 --dm in
-signal  DM_mc:         std_logic_vector(1 downto 0);	  --Byte-01 HalfWord-10£¬Word-11£¬Nop-00
+signal  DM_mc:         std_logic_vector(1 downto 0);	  --Byte-01 HalfWord-10Â£Â¬Word-11Â£Â¬Nop-00
 signal  DM_alu_out:    std_logic_vector(31 downto 0); --address &mux, can be not 4-aligned address
 signal  DM_data_in:    std_logic_vector(31 downto 0); --data_in
-signal  DM_rd:         std_logic;      	--1:Load£»0:Store
+signal  DM_rd:         std_logic;      	--1:LoadÂ£Â»0:Store
 signal  DM_op:         std_logic_vector(2 downto 0); --Use in mux for write_back //same as funct3 
 signal  DM_s_data_ext: std_logic; --Use in mux for write_back //0: alu_out=>dm_out; 1: data_ext=>dm_out
 --dm out
@@ -210,16 +211,18 @@ begin
 --PC
 REG_rd_data_in<=PC_rd_data_in;
 IM_addr<=PC_pc_now;
+ALU_pc_out<=PC_pc_now;
 --IM
 REG_rd_addr<=IM_rd_addr;
 REG_rs1_addr<=IM_rs1_addr;
 REG_rs2_addr<=IM_rs2_addr;
 CU_instruction<=IM_instruction;
+ALU_instr_alu<=IM_instruction;
 --CU
 PC_s_pc_in<=CU_s_pc_in;
 PC_s_rd_data_in<=CU_s_rd_data_in;
 PC_we_pc<=CU_we_pc;
---null <=CU_rd_im;
+IM_clk<=clk and CU_rd_im;
 REG_re<=CU_re_regfile;
 REG_we<=CU_we_regfile;
 ALU_s_rs1<=CU_s_rs1;
@@ -230,8 +233,7 @@ ALU_op_alu<=CU_op_alu;
 DM_mc<=CU_mc;
 DM_rd<=CU_rd_dm;
 DM_s_data_ext<=CU_s_data_ext;
--- null <=CU_funct3;
-DM_op<=CU_opcode;
+DM_op<=CU_funct3;
 
 
 --REG
@@ -239,6 +241,7 @@ ALU_rs1_data<=REG_rs1_data;
 ALU_rs2_data<=REG_rs2_data;
 --ALU
 DM_alu_out<=ALU_alu_out;
+PC_alu_out<=ALU_alu_out;
 CU_bc<=ALU_bc;
 --DM
 PC_rd_data<=DM_dm_out;
@@ -295,8 +298,8 @@ U3: reg PORT MAP(
   rs2_data=>REG_rs2_data);
   
 U6: instructionmemory PORT MAP(
-clk=>clk,
-rst=>rst,
+clk=>IM_clk,
+rst=>not rst,
 addr=>IM_addr,
 funct7=>IM_funct7,
 funct3=>IM_funct3,
@@ -323,7 +326,7 @@ U4: alu PORT MAP(
   
 U5: datamemory PORT MAP(
 clk=>clk,
-rst=>rst,
+rst=>not rst,
 mc=>DM_mc,
 alu_out=>DM_alu_out,
 data_in=>DM_data_in,
