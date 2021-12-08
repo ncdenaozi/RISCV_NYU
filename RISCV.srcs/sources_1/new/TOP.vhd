@@ -299,7 +299,7 @@ U3: reg PORT MAP(
   
 U6: instructionmemory PORT MAP(
 clk=>IM_clk,
-rst=>not rst,
+rst=>rst,
 addr=>IM_addr,
 funct7=>IM_funct7,
 funct3=>IM_funct3,
@@ -326,7 +326,7 @@ U4: alu PORT MAP(
   
 U5: datamemory PORT MAP(
 clk=>clk,
-rst=>not rst,
+rst=>rst,
 mc=>DM_mc,
 alu_out=>DM_alu_out,
 data_in=>DM_data_in,

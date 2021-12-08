@@ -1,4 +1,2 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-End of IM testbenches
-$finish called at time : 50 ns : File "C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v" Line 56
