@@ -5,6 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity TOP is
   Port ( 
 clk:		in std_logic:='0';
+debug_out:  out std_logic_vector(31 downto 0);
 rst:		in std_logic:='0'
   );
 end TOP;
@@ -334,5 +335,7 @@ rd=>DM_rd,
 op=>DM_op,
 s_data_ext=>DM_s_data_ext,
 dm_out=>DM_dm_out);
+
+debug_out<=ALU_alu_out;
 
 end Behavioral;
