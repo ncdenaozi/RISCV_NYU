@@ -155,7 +155,7 @@ process(op_bc, rs1_data, rs2_data, rst) begin
     end if;
 end process;
 
-process(instr_alu, rst) begin
+process(instr_alu, op_ext, rst) begin
     if(rst='0')then
         ext <= (others => '0');
     else
@@ -203,7 +203,8 @@ process(alu_1, alu_2, op_alu, rst) begin
         when "00000" =>
             alu_out <= alu_2(19 downto 0) & "000000000000";
         when "00001" =>
-            alu_out <= std_logic_vector(unsigned(alu_2(19 downto 0) & "000000000000") + to_unsigned(to_integer(unsigned(alu_1))-4, 32));
+            --alu_out <= std_logic_vector(unsigned(alu_2(19 downto 0) & "000000000000") + to_unsigned(to_integer(unsigned(alu_1))-4, 32));
+            alu_out <= std_logic_vector(unsigned(alu_2(19 downto 0) & "000000000000") + unsigned(alu_1));
         when "00010" =>
             --alu_out <= std_logic_vector(unsigned(alu_2(19 downto 0) & '0') + unsigned(alu_1));
             alu_out <= std_logic_vector(unsigned(alu_2) + unsigned(alu_1));
