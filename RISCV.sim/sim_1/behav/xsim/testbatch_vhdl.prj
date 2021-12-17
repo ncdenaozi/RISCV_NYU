@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RISCV.srcs/sources_1/imports/Desktop/reg.vhd" \
+"../../../../RISCV.srcs/sources_1/imports/Desktop/control_unit.vhd" \
+"../../../../RISCV.srcs/sources_1/imports/Desktop/pc.vhd" \
+"../../../../RISCV.srcs/sources_1/imports/Desktop/alu.vhd" \
+"../../../../RISCV.srcs/sources_1/new/TOP.vhd" \
+"../../../../RISCV.srcs/sim_1/new/testbatch_rst.vhd" \
+"../../../../RISCV.srcs/sim_1/new/pc-testbench.vhd" \
+"../../../../RISCV.srcs/sim_1/new/test_alu.vhd" \
+"../../../../RISCV.srcs/sim_1/new/test_reg.vhd" \
+"../../../../RISCV.srcs/sim_1/new/control_unit_testbench.vhd" \
+
+# Do not sort compile order
+nosort

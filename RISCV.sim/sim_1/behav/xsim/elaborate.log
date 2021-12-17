@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2385a856cd5d44a1addce1cd766aee52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_behav xil_defaultlib.TOP xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2385a856cd5d44a1addce1cd766aee52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbatch_behav xil_defaultlib.testbatch xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package std.env
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package vl.vl_types
@@ -21,5 +22,6 @@ Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
 Compiling module xil_defaultlib.InstructionMemory
 Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
 Compiling module xil_defaultlib.DataMemory
-Compiling architecture behavioral of entity xil_defaultlib.top
-Built simulation snapshot TOP_behav
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbatch
+Built simulation snapshot testbatch_behav

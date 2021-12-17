@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 10 12:48:30 2021
+# Process ID: 14772
+# Current directory: D:/Workfile/Git/RISCV_NYU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7136 D:\Workfile\Git\RISCV_NYU\RISCV.xpr
+# Log file: D:/Workfile/Git/RISCV_NYU/vivado.log
+# Journal file: D:/Workfile/Git/RISCV_NYU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Workfile/Git/RISCV_NYU/RISCV.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/test_alu.txt D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/test_reg.txt}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 10 12:54:47 2021...

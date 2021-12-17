@@ -204,6 +204,7 @@ signal  DM_data_in:    std_logic_vector(31 downto 0); --data_in
 signal  DM_rd:         std_logic;      	--1:Load£»0:Store
 signal  DM_op:         std_logic_vector(2 downto 0); --Use in mux for write_back //same as funct3 
 signal  DM_s_data_ext: std_logic; --Use in mux for write_back //0: alu_out=>dm_out; 1: data_ext=>dm_out
+signal  DM_clk:        std_logic; 
 --dm out
 signal  DM_dm_out:     std_logic_vector(31 downto 0); 
 
@@ -235,11 +236,12 @@ DM_mc<=CU_mc;
 DM_rd<=CU_rd_dm;
 DM_s_data_ext<=CU_s_data_ext;
 DM_op<=CU_funct3;
-
+DM_clk<=clk and (CU_mc(1) or CU_mc(0));
 
 --REG
 ALU_rs1_data<=REG_rs1_data;
 ALU_rs2_data<=REG_rs2_data;
+DM_data_in<=REG_rs2_data;
 --ALU
 DM_alu_out<=ALU_alu_out;
 PC_alu_out<=ALU_alu_out;
@@ -326,7 +328,7 @@ U4: alu PORT MAP(
   bc=>ALU_bc);
   
 U5: datamemory PORT MAP(
-clk=>clk,
+clk=>DM_clk,
 rst=>rst,
 mc=>DM_mc,
 alu_out=>DM_alu_out,
@@ -336,6 +338,6 @@ op=>DM_op,
 s_data_ext=>DM_s_data_ext,
 dm_out=>DM_dm_out);
 
-debug_out<=ALU_alu_out;
+debug_out<=DM_dm_out;
 
 end Behavioral;

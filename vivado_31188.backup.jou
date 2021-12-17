@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  9 13:09:37 2021
+# Process ID: 31188
+# Current directory: D:/Workfile/Git/RISCV_NYU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26924 D:\Workfile\Git\RISCV_NYU\RISCV.xpr
+# Log file: D:/Workfile/Git/RISCV_NYU/vivado.log
+# Journal file: D:/Workfile/Git/RISCV_NYU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Workfile/Git/RISCV_NYU/RISCV.xpr
+launch_simulation
+source TOP.tcl
+restart
+current_wave_config {Untitled 1}
+add_wave {{/TOP/U5}} 
+current_wave_config {Untitled 1}
+add_wave {{/TOP/U3}} 
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 10 ns
+run 10 ns
+run 50000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 29500 ns
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch.vhd w ]
+add_files -fileset sim_1 D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbatch [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+source testbatch.tcl
+restart
+add_force {/testbatch/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 86800 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+add_force {/testbatch/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 87000 ns
+close_sim

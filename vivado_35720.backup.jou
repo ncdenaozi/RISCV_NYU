@@ -1,0 +1,475 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  8 13:59:19 2021
+# Process ID: 35720
+# Current directory: D:/Workfile/Git/RISCV_NYU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39424 D:\Workfile\Git\RISCV_NYU\RISCV.xpr
+# Log file: D:/Workfile/Git/RISCV_NYU/vivado.log
+# Journal file: D:/Workfile/Git/RISCV_NYU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Workfile/Git/RISCV_NYU/RISCV.xpr
+launch_simulation
+source TOP.tcl
+restart
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+add_wave {{/TOP/U4}} 
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/TOP/rst} -radix hex {0 0ns}
+run 100 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+current_wave_config {Untitled 2}
+add_wave {{/TOP/U4}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 2880 ns
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source TOP.tcl
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+run 2880 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 2880 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 2880 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 480 ns
+current_wave_config {Untitled 6}
+add_wave {{/TOP/U5}} 
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 1000 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/TOP/rst} -radix hex {0 0ns}
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+current_wave_config {Untitled 7}
+add_wave {{/TOP/U5}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+current_wave_config {Untitled 8}
+add_wave {{/TOP/U5}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+current_wave_config {Untitled 9}
+add_wave {{/TOP/U5}} 
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/TOP/rst} -radix hex {0 0ns}
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+current_wave_config {Untitled 10}
+add_wave {{/TOP/U5}} 
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+restart
+current_wave_config {Untitled 10}
+add_wave {{/TOP/U4}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+current_wave_config {Untitled 11}
+add_wave {{/TOP/U5}} 
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+restart
+current_wave_config {Untitled 11}
+add_wave {{/TOP/U3}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 490 ns
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+current_wave_config {Untitled 12}
+add_wave {{/TOP/U5}} 
+add_force {/TOP/rst} -radix hex {0 0ns}
+current_wave_config {Untitled 12}
+add_wave {{/TOP/U3}} 
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+restart
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 52000 ns
+close_sim
+launch_simulation
+source TOP.tcl
+current_wave_config {Untitled 13}
+add_wave {{/TOP/U5}} 
+current_wave_config {Untitled 13}
+add_wave {{/TOP/U3}} 
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 52000 ns
+save_wave_config {C:/Users/CM/Desktop/TOP_behav.wcfg}
+close_sim
+launch_simulation
+source TOP.tcl
+restart
+current_wave_config {Untitled 14}
+add_wave {{/TOP/U5}} 
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+current_wave_config {Untitled 14}
+add_wave {{/TOP/U3}} 
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 1000 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+restart
+add_force {/TOP/rst} -radix hex {0 0ns}
+add_force {/TOP/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/TOP/rst} -radix hex {1 0ns}
+run 29500 ns
+close_sim
