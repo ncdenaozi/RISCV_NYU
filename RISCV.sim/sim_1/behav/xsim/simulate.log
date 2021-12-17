@@ -1,4 +1,8 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
 Note: $$$$$$$$All tests passed$$$$$$$$
+<<<<<<< HEAD
 Time: 143840 ns  Iteration: 0  Process: /testbatch/line__57  File: C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd
+=======
+Time: 143840 ns  Iteration: 0  Process: /testbatch/line__51  File: D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719

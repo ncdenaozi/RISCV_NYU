@@ -32,13 +32,22 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity testbatch is
+<<<<<<< HEAD
   --Port ( );
+=======
+  Port (
+  clk: in std_logic
+  );
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
 end testbatch;
 
 architecture Behavioral of testbatch is
 signal rst: std_logic;
 signal output: std_logic_vector(31 downto 0);
+<<<<<<< HEAD
 signal clk: std_logic;
+=======
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
 begin
 
 dut: entity work.TOP port map(
@@ -48,6 +57,7 @@ rst => rst
 );
 
 process begin
+<<<<<<< HEAD
     clk <= '0';
     wait for 5ns;
     clk <= '1';
@@ -55,6 +65,8 @@ process begin
 end process;
 
 process begin
+=======
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
     rst <= '0';
     wait for 10ns;
     rst <= '1';

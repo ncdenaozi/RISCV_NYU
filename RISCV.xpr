@@ -3,7 +3,11 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
+<<<<<<< HEAD
 <Project Version="7" Minor="39" Path="C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.xpr">
+=======
+<Project Version="7" Minor="39" Path="D:/Workfile/Git/RISCV_NYU/RISCV.xpr">
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2385a856cd5d44a1addce1cd766aee52"/>
@@ -33,7 +37,11 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="basys3"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
+<<<<<<< HEAD
     <Option Name="WTXSimLaunchSim" Val="74"/>
+=======
+    <Option Name="WTXSimLaunchSim" Val="69"/>
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -146,6 +154,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+<<<<<<< HEAD
       <File Path="$PSRCDIR/sim_1/new/pc-testbench.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -172,6 +181,8 @@
       </File>
       <File Path="$PSRCDIR/sim_1/new/test_alu.txt"/>
       <File Path="$PSRCDIR/sim_1/new/test_reg.txt"/>
+=======
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="testbatch"/>

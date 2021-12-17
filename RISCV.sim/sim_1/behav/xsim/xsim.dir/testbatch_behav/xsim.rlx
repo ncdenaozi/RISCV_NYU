@@ -1,11 +1,19 @@
 
 { 
+<<<<<<< HEAD
     crc :  4642952939137967742  , 
+=======
+    crc :  2059010061475028172  , 
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
     ccp_crc :  0  , 
     cmdline : " -wto 2385a856cd5d44a1addce1cd766aee52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbatch_behav xil_defaultlib.testbatch xil_defaultlib.glbl" , 
     buildDate : "Dec  7 2018" , 
     buildTime : "00:33:28" , 
+<<<<<<< HEAD
     linkCmd : "C:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/testbatch_behav/xsimk.exe\"   \"xsim.dir/testbatch_behav/obj/xsim_0.win64.obj\" \"xsim.dir/testbatch_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+=======
+    linkCmd : "D:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/testbatch_behav/xsimk.exe\"   \"xsim.dir/testbatch_behav/obj/xsim_0.win64.obj\" \"xsim.dir/testbatch_behav/obj/xsim_1.win64.obj\" -L\"D:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719
     aggregate_nets : 
     [ 
     ] 

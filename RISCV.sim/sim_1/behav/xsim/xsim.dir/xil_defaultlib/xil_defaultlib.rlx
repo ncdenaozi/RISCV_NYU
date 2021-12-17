@@ -2,6 +2,7 @@
 2018.3
 Dec  7 2018
 00:33:28
+<<<<<<< HEAD
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.sim/sim_1/behav/xsim/glbl.v,1638943149,verilog,,,,glbl,,,,,,,,
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v,1637299011,verilog,,,,DM_testbench,,,,,,,,
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v,1637299073,verilog,,C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v,,IM_testbench,,,,,,,,
@@ -17,3 +18,16 @@ C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/reg
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v,1639102044,verilog,,C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v,,DataMemory,,,,,,,,
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/new/InstructionMemory.v,1639026966,verilog,,C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v,,InstructionMemory,,,,,,,,
 C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/new/TOP.vhd,1639027002,vhdl,C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd,,,top,,,,,,,,
+=======
+D:/Workfile/Git/RISCV_NYU/RISCV.sim/sim_1/behav/xsim/glbl.v,1638943149,verilog,,,,glbl,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v,1638943149,verilog,,,,DM_testbench,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v,1638943149,verilog,,D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v,,IM_testbench,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd,1639031269,vhdl,,,,testbatch,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/alu.vhd,1638952358,vhdl,,,,alu,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/control_unit.vhd,1638943149,vhdl,,,,control_unit,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/pc.vhd,1638943149,vhdl,,,,pc,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/reg.vhd,1638943149,vhdl,,,,reg,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v,1638955250,verilog,,D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v,,DataMemory,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/new/InstructionMemory.v,1639026966,verilog,,D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v,,InstructionMemory,,,,,,,,
+D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sources_1/new/TOP.vhd,1639027002,vhdl,D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd,,,top,,,,,,,,
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/reg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'reg'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sources_1/imports/Desktop/control_unit.vhd" into library xil_defaultlib
@@ -18,3 +19,7 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AERO/Desktop/project/RISCV_NYU
 INFO: [VRFC 10-3107] analyzing entity 'test_reg'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AERO/Desktop/project/RISCV_NYU/RISCV.srcs/sim_1/new/control_unit_testbench.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ctu_test'
+=======
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Workfile/Git/RISCV_NYU/RISCV.srcs/sim_1/new/testbatch_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbatch'
+>>>>>>> 64fc6c13af55c552ccc346a3d05eb004f6944719

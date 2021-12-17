@@ -1,0 +1,289 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 18 16:31:16 2021
+# Process ID: 16960
+# Current directory: C:/Users/AERO/Desktop/RISCV_NYU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14140 C:\Users\AERO\Desktop\RISCV_NYU\RISCV.xpr
+# Log file: C:/Users/AERO/Desktop/RISCV_NYU/vivado.log
+# Journal file: C:/Users/AERO/Desktop/RISCV_NYU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/AERO/Desktop/RISCV_NYU/RISCV.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sources_1/new/InstructionMemory.v w ]
+add_files C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sources_1/new/InstructionMemory.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source InstructionMemory.tcl
+close_sim
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+close_design
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/InstructionMemory/rst} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+close_sim
+launch_simulation
+source InstructionMemory.tcl
+close_sim
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/InstructionMemory/addr} -radix hex {1 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+close_sim
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/InstructionMemory/rst} -radix hex {1 0ns}
+add_force {/InstructionMemory/rst} -radix hex {0 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {00000000 0ns}
+run 1000 ns
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {01000ffc 0ns}
+run 1000 ns
+run 1000 ns
+close_sim
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {00000000 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {7fc 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {000 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {01 0ns}
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {0ff 0ns}
+run 1000 ns
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/InstructionMemory/addr} -radix hex {01000000 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {010007fc 0ns}
+run 1000 ns
+run 1000 ns
+close_sim
+close [ open C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v w ]
+add_files C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sources_1/new/DataMemory.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DataMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DataMemory [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source DataMemory.tcl
+add_force {/DataMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100000 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100004 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100008 0ns}
+run 1000 ns
+add_force {/DataMemory/rd} -radix hex {1 0ns}
+add_force {/DataMemory/we} -radix hex {11 0ns}
+add_force {/DataMemory/we} -radix bin {11 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00000000 0ns}
+run 1000 ns
+add_force {/DataMemory/data_in} -radix hex {12345678 0ns}
+add_force {/DataMemory/rd} -radix hex {0 0ns}
+add_force {/DataMemory/alu_out} -radix hex {08000000 0ns}
+run 1000 ns
+close_sim
+launch_simulation
+source DataMemory.tcl
+add_force {/DataMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100000 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100004 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {00100008 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {08000000 0ns}
+add_force {/DataMemory/mc} -radix hex {11 0ns}
+add_force {/DataMemory/mc} -radix bin {11 0ns}
+add_force {/DataMemory/rd} -radix hex {1 0ns}
+add_force {/DataMemory/rd} -radix hex {0 0ns}
+add_force {/DataMemory/data_in} -radix hex {12345678 0ns}
+run 1000 ns
+add_force {/DataMemory/mc} -radix hex {01 0ns}
+add_force {/DataMemory/data_in} -radix hex {08000004 0ns}
+add_force {/DataMemory/alu_out} -radix hex {08000004 0ns}
+add_force {/DataMemory/data_in} -radix hex {00000001 0ns}
+run 1000 ns
+add_force {/DataMemory/rd} -radix hex {1 0ns}
+add_force {/DataMemory/mc} -radix hex {3 0ns}
+add_force {/DataMemory/alu_out} -radix hex {08000000 0ns}
+run 1000 ns
+add_force {/DataMemory/alu_out} -radix hex {08000004 0ns}
+run 1000 ns
+close_sim
+file mkdir C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v w ]
+add_files -fileset sim_1 C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IM_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DataMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_simulation
+launch_simulation
+source IM_testbench.tcl
+close_sim
+launch_simulation
+source IM_testbench.tcl
+close_sim
+launch_simulation
+source IM_testbench.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v w ]
+add_files -fileset sim_1 C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/DM_testbench.v
+set_property is_enabled false [get_files  C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source InstructionMemory.tcl
+add_force {/InstructionMemory/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/InstructionMemory/addr} -radix hex {01000000 0ns}
+run 1000 ns
+add_force {/InstructionMemory/addr} -radix hex {01000004 0ns}
+run 100 ns
+close_sim
+set_property is_enabled true [get_files  C:/Users/AERO/Desktop/RISCV_NYU/RISCV.srcs/sim_1/new/IM_testbench.v]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IM_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IM_testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DM_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+launch_simulation
+source DM_testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IM_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IM_testbench.tcl
+close_sim
+launch_simulation
+source IM_testbench.tcl
+close_sim
